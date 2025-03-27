@@ -1,0 +1,9 @@
+mode=drun
+allow_images=true
+
+key_expand=Alt-space
+
+key_hide_search=Alt-s
+
+width=485
+height=500

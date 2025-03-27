@@ -1,0 +1,98 @@
+@define-color	red  #9b4b4b;
+@define-color	red-rgb  rgb(155, 75, 75);
+@define-color	yellow  #c8c878;
+@define-color	yellow-rgb  rgb(200, 200, 120);
+@define-color	text  #b5b5b5;
+@define-color	text-rgb  rgb(181, 181, 181);
+@define-color	base  #1e1e1e;
+@define-color	base-rgb  rgb(30, 30, 30);
+@define-color	base-rgba  rgba(0, 0, 0, 0.5);
+@define-color surface #525252;
+@define-color surface-rgb rgb(82, 82, 82);
+
+
+* {
+  font-family: Fontawesome, 'Fira sans semibold', Helvetica, Arial;
+  font-size: 18px;
+}
+
+/* Window */
+window {
+  margin: 0px;
+  padding: 3px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: @base-rgba;
+}
+
+/* Inner Box */
+#inner-box {
+  border: none;
+  background-color: transparent;
+}
+
+/* Outer Box */
+#outer-box {
+  border: none;
+  background-color: transparent;
+}
+
+/* Scroll */
+#scroll {
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Input */
+#input {
+  padding: 10px;
+  border: none;
+  color: @text;
+  background-color: transparent;
+  outline: transparent;
+}
+
+#input image {
+    border: none;
+    color: white;
+}
+
+#input:focus {
+	box-shadow: none;
+}
+/* Text */
+#text {
+  margin: 5px;
+  border: none;
+  color: @text;
+}
+
+#entry {
+  background-color: transparent;
+}
+
+#entry arrow {
+  color: @yellow;
+  border: none;
+}
+
+/* Selected Entry */
+#entry:selected {
+  border: 1px solid white;
+  background-color: rgba(100, 100, 100, 0.9);
+}
+
+#entry:selected #text {
+
+}
+
+#entry:drop(active) {
+  background-color: @base!important;
+}
+
+image {
+  margin-left: .25em;
+  margin-right: .25em;
+}
