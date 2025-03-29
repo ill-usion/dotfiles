@@ -5,6 +5,7 @@ import sys
 import time
 import requests
 import json
+from pathlib import Path
 
 
 def fetch_weather(location: str) -> str:
@@ -78,7 +79,7 @@ def print_formatted(text: str) -> None:
 
 
 UPDATE_INTERVAL = 60 * 30 # Upate every 30mins
-CACHE_PATH = "/home/ahmed/.cache/.waybar_weather_cache"
+CACHE_PATH = str(Path("~/.cache/.waybar_weather_cache").expanduser())
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
