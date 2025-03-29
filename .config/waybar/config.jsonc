@@ -111,6 +111,6 @@
 		"format": "{}",
 		"return-type": "json",
 		"interval": 1800,
-		"exec": "$HOME/.config/waybar/weather.py"
+		"exec": "$HOME/.config/waybar/weather.py Muscat"
 	}
 }
