@@ -82,7 +82,8 @@
 				""
 			]
 		},
-		"on-click": "pavucontrol"
+		"on-click": "pavucontrol",
+		"on-click-right": "qpaeq"
 	},
 	"bluetooth": {
 		"format": "",

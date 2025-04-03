@@ -17,6 +17,8 @@ alias spp='~/.config/scripts/set-power-profile.sh'
 alias hyprcfg='sudo vim ~/.config/hypr/hyprland.conf'
 alias waybarcfg='sudo vim ~/.config/waybar/config.jsonc'
 
+alias uni="cd ~/Documents/Uni/Spring\ 2025"
+
 # Load Pywal colors
 if [ -f "$HOME/.cache/wal/sequences" ]; then
     cat "$HOME/.cache/wal/sequences"
