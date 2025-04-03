@@ -83,7 +83,7 @@
 			]
 		},
 		"on-click": "pavucontrol",
-		"on-click-right": "qpaeq"
+		"on-click-right": "pulseaudio-equalizer-gtk"
 	},
 	"bluetooth": {
 		"format": "",
