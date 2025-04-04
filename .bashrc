@@ -17,6 +17,8 @@ alias spp='~/.config/scripts/set-power-profile.sh'
 alias hyprcfg='sudo vim ~/.config/hypr/hyprland.conf'
 alias waybarcfg='sudo vim ~/.config/waybar/config.jsonc'
 
+alias logout="hyprctl dispatch exit"
+
 alias uni="cd ~/Documents/Uni/Spring\ 2025"
 
 # Load Pywal colors
