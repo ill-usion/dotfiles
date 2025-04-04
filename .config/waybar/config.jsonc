@@ -14,7 +14,7 @@
 		"bluetooth",
 		"battery",
 		"custom/media",
-		"custom/weather",
+		// "custom/weather",
 		"clock",
 		"tray"
 	],
@@ -83,7 +83,7 @@
 			]
 		},
 		"on-click": "pavucontrol",
-		"on-click-right": "pulseaudio-equalizer-gtk"
+		"on-click-right": "easyeffects" 
 	},
 	"bluetooth": {
 		"format": "",
