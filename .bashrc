@@ -16,6 +16,7 @@ alias cam="~/.config/scripts/start-phone-cam.sh"
 alias spp='~/.config/scripts/set-power-profile.sh'
 alias hyprcfg='nvim ~/.config/hypr/hyprland.conf'
 alias waybarcfg='nvim ~/.config/waybar/config.jsonc'
+alias nvimcfg='nvim ~/.config/nvim/init.vim'
 
 alias logout="hyprctl dispatch exit"
 
