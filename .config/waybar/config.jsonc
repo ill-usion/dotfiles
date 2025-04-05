@@ -14,7 +14,7 @@
 		"bluetooth",
 		"battery",
 		"custom/media",
-		// "custom/weather",
+		"custom/weather",
 		"clock",
 		"tray"
 	],
