@@ -8,7 +8,7 @@ if [[ -f "$WALLPAPER" ]]; then
     kitty @ set-colors --all ~/.cache/wal/colors-kitty.conf
 
     # Generate a Vencord theme
-    walcord -o ~/.config/Vencord/themes/walcord.theme.css
+    walcord -o ~/.config/vesktop/themes/walcord.theme.css
 else
     echo "Wallpaper file not found: $WALLPAPER"
     exit 1
