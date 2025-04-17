@@ -17,7 +17,7 @@ alias spp='~/.config/scripts/set-power-profile.sh'
 alias hyprcfg='nvim ~/.config/hypr/hyprland.conf'
 alias waybarcfg='nvim ~/.config/waybar/config.jsonc'
 alias nvimcfg='nvim ~/.config/nvim/init.vim'
-
+alias nv=nvim
 alias logout="hyprctl dispatch exit"
 
 alias uni="cd ~/Documents/Uni/Spring\ 2025"
