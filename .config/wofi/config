@@ -1,9 +1,12 @@
 mode=drun
 allow_images=true
+hide_scroll=true
 
 key_expand=Alt-space
-
 key_hide_search=Alt-s
 
-width=485
+width=475
 height=500
+
+prompt=Search...
+columns=1
