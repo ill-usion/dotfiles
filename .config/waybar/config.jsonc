@@ -10,10 +10,11 @@
 		"hyprland/window"
 	],
 	"modules-right": [
-		"pulseaudio",
-		"network",
-		"bluetooth",
-		"battery",
+		"group/hwinterfaces",
+		// "pulseaudio",
+		// "network",
+		// "bluetooth",
+		// "battery",
 		"custom/media",
 		"custom/weather",
 		"clock",
@@ -30,6 +31,24 @@
 			"active": "",
 			"default": ""
 		}
+	},
+	"group/hwinterfaces": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 230,
+			"transition-left-to-right": false
+		},
+		"modules": [
+			"custom/hwinterfaces-wrap",
+			"pulseaudio",
+			"network",
+			"bluetooth",
+			"battery"
+		]
+	},
+	"custom/hwinterfaces-wrap": {
+		"format": "",
+		"tooltip-format": "Hardware interfaces"
 	},
 	"cava": {
 		"framerate": 24,

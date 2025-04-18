@@ -60,7 +60,10 @@ button:hover {
 #battery,
 #network,
 #pulseaudio,
+#bluetooth,
 #custom-media,
+#custom-weather,
+#custom-hwinterfaces-wrap,
 #tray {
 	padding: 0 5px;
 	color: #ffffff;
@@ -90,3 +93,4 @@ button:hover {
 	-gtk-icon-effect: highlight;
 	background-color: #eb4d4b;
 }
+
