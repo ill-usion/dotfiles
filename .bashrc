@@ -5,7 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='\u@\h \W \$ '
+# PS1='\u@\h \W \$ '
+PS1='\[\e[1m\]\u\[\e[0m\] \[\e[2m\]\w\n\[\e[0m\]\\$ '
 TERM=xterm-256color
 
 alias ls='ls --color=auto'
