@@ -11,8 +11,10 @@ STATE=$(cat "$STATE_FILE")
 if [[ "$STATE" -eq 0 ]]; then
     hyprsunset -t 3500 &
     echo 1 > "$STATE_FILE"
+    notify-send -t 1000 Nightlight on
 else
     killall hyprsunset
     echo 0 > "$STATE_FILE"
+    notify-send -t 1000 Nightlight off
 fi
 
