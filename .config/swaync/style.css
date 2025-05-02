@@ -1,0 +1,29 @@
+* {
+	font-family: FontAwesome, 'Fira sans semibold', monospace;
+	font-size: 14px;
+	color: #b5b5b5;
+}
+
+.notification {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 5px;
+}
+
+.notification .title {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.notification .body {
+ 	font-weight: normal; 
+	font-size: 14px;
+}
+
+.notification .icon {
+	margin-right: 10px;
+	border-radius: 4px;
+}
+
