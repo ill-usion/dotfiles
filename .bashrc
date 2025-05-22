@@ -10,6 +10,7 @@ PS1='\[\e[1m\]\u\[\e[0m\] \[\e[2m\]\w\n\[\e[0m\]\\$ '
 TERM=xterm-256color
 
 alias ls='ls --color=never'
+alias lsc='ls --color=never -1v | column'
 alias lsr='ls --color=auto --recursive'
 alias grep='grep --color=auto'
 
