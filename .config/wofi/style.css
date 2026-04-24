@@ -5,6 +5,7 @@
 @define-color search-image white;
 
 * {
+    color: @text;
 	font-family: FontAwesome, 'Fira sans semibold';
 	font-size: 16px;
 }
@@ -15,6 +16,7 @@ window {
 }
 
 #inner-box {
+    padding: 0px;
 	background-color: transparent;
 }
 
@@ -47,6 +49,10 @@ window {
 	background-color: transparent;
 	border-radius: 6px;
 	margin: 3px;
+}
+
+#entry:last-child {
+    margin-bottom: 0;
 }
 
 #expander-box {

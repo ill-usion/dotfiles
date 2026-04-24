@@ -4,7 +4,7 @@
 }
 
 window#waybar {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.1);
 	color: #ffffff;
 	transition-property: background-color;
 	transition-duration: 0.5s;
@@ -12,15 +12,6 @@ window#waybar {
 
 window#waybar.hidden {
 	opacity: 0.2;
-}
-
-window#waybar.termite {
-	background-color: #3f3f3f;
-}
-
-window#waybar.chromium {
-	background-color: #000000;
-	border: none;
 }
 
 button {
@@ -44,7 +35,7 @@ button:hover {
 }
 
 #workspaces button.active {
-	background-color: rgba(255, 255, 255, 0.3);
+	/* background-color: rgba(255, 255, 255, 0.3); */
 }
 
 #workspaces button:hover {
@@ -61,17 +52,18 @@ button:hover {
 #network,
 #pulseaudio,
 #bluetooth,
-#custom-media,
-#custom-weather,
-#custom-hwinterfaces-wrap,
 #tray {
 	padding: 0 5px;
 	color: #ffffff;
 }
 
-#window,
-#workspaces {
-	margin: 0 4px;
+#custom-power-options {
+    padding: 0 8px; 
+}
+
+#window {
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -79,11 +71,15 @@ button:hover {
 	margin-left: 0;
 }
 
+
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right>widget:last-child>#workspaces {
-	margin-right: 0;
+	margin-right: 0px;
 }
 
+#tray {
+    margin-left: 6px;
+}
 
 #tray>.passive {
 	-gtk-icon-effect: dim;

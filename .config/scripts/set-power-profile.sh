@@ -1,7 +1,8 @@
 #! /bin/bash
 
 function set_profile() {
-	asusctl profile -P $1
+	asusctl profile set $1
+    notify-send "Power Profile" $1
 }
 
 case $1 in 
