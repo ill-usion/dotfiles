@@ -1,7 +1,9 @@
 // -*- mode: jsonc -*-
 {
+    "include": ["~/.config/waybar/modules.jsonc"],
 	"height": 30,
 	"spacing": 6,
+    // "margin": "5 10 0 10",
 	"modules-left": [
         "hyprland/workspaces",
 		"group/tray-icons",
@@ -13,150 +15,6 @@
         "mpris",
 		"group/hwinterfaces",
 		"clock",
-	],
-	// Modules configuration
-	"hyprland/workspaces": {
-		"all-outputs": true,
-		"warp-on-scroll": false,
-        "active-only": false,
-		"format": "{icon}",
-		"format-icons": {
-			"urgent": "",
-			"active": "",
-			"default": ""
-		}
-	},
-	"group/hwinterfaces": {
-		"orientation": "horizontal",
-		"drawer": {
-			"transition-duration": 230,
-			"transition-left-to-right": false,
-            "click-to-reveal": true
-		},
-		"modules": [
-			"custom/hwinterfaces-wrap",
-			"pulseaudio",
-			"network",
-			"bluetooth",
-			"battery",
-            "custom/power-options",
-		]
-	},
-	"custom/hwinterfaces-wrap": {
-		// "format": "",
-		// "format": "",
-		"format": "",
-		"tooltip-format": "Hardware interfaces"
-	},
-    "custom/power-options": {
-        "format": "",
-        "on-click": "$HOME/.config/scripts/launch-power-menu.sh",
-        "tooltip-format": "Power options"
-    },
-    "group/tray-icons": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 230,
-            "transition-left-to-right": true,
-            "click-to-reveal": true,
-            "start-expanded": true,
-        },
-        "modules": ["custom/tray-icons-wrap", "tray"]
-    },
-    "custom/tray-icons-wrap": {
-        "format": "",
-        "tooltip-format": "Tray icons"
-    },
-	"cava": {
-		"framerate": 24,
-		"autosens": 1,
-		"bars": 12,
-		"lower_cutoff_freq": 50,
-		"higher_cutoff_freq": 10000,
-		"hide_on_silence": true,
-		"method": "pulse",
-		"source": "auto",
-		"stereo": false,
-		"reverse": false,
-		"bar_delimiter": 32,
-		"monstercat": false,
-		"waves": false,
-		"noise_reduction": 0.67,
-		"input_delay": 2,
-		"format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
-	},
-	"tray": {
-		"spacing": 10
-	},
-	"clock": {
-		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-		"format": "{:%H:%M - %a %d}",
-		"format-alt": "{:%H:%M:%S - %d-%m-%Y}",
-        "interval": 1
-	},
-	"battery": {
-		"format": "{icon} {capacity}%",
-		"format-full": "{icon} {capacity}%",
-		"format-charging": " {capacity}%",
-		"format-plugged": " {capacity}%",
-		"format-alt": "{icon} {time}",
-		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
-		]
-	},
-	"network": {
-		"format-wifi": "",
-		"format-ethernet": "{ipaddr}/{cidr} ",
-		"format-linked": "{ifname} (No IP) ",
-		"format-disconnected": "No Wi-Fi",
-		"tooltip-format-wifi": "{essid} ({signalStrength}%) @ {gwaddr}",
-		"on-click": "nm-applet",
-		"on-click-middle": "pkill nm-applet",
-		"on-click-right": "nm-connection-editor"
-	},
-	"pulseaudio": {
-		"format": "{icon} {volume}%",
-		"format-bluetooth": "{icon} {volume}%",
-		"format-bluetooth-muted": " {icon}",
-		"format-muted": " {format_source}",
-		"format-source": " {volume}%",
-		"format-source-muted": "",
-		"format-icons": {
-			"headphone": "",
-			"hands-free": "",
-			"headset": "",
-			"phone": "",
-			"portable": "",
-			"car": "",
-			"default": [
-				"",
-				"",
-				""
-			]
-		},
-		"on-click": "pavucontrol",
-		"on-click-right": "easyeffects" 
-	},
-	"bluetooth": {
-		"format": "",
-		"tooltip-format": "{status}",
-		"format-disabled": "",
-		"format-off": "",
-		"interval": 30,
-		"on-click": "blueman-manager",
-		"format-no-controller": ""
-	},
-    "mpris": {
-        "format": "{player_icon}{status_icon} {title} - {artist}",
-        "max-length": 50,
-        "status-icons": {
-            "paused": " ",
-            "playing": " ",
-            "stopped": ""
-        }
-    }
+        "custom/notifications", 
+	]
 }

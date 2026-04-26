@@ -1,0 +1,73 @@
+{
+	"positionX": "right",
+	"positionY": "top",
+    "fit-to-screen": false,
+	"control-center-width": 400,
+	"control-center-height": 700,
+	"control-center-margin-top": 10,
+	"control-center-margin-bottom": 10,
+	"control-center-margin-left": 10,
+	"control-center-margin-right": 10,
+	"notification-icon-size": 32,
+	"notification-body-image-height": 200,
+	"notification-body-image-width": 200,
+	"notification-window-width": 400,
+	"keyboard-shortcuts": true,
+	"widgets": [
+		"mpris",
+        "volume",
+		"dnd",
+        "buttons-grid",
+        "title",
+		"notifications"
+	],
+	"widget-config": {
+		"title": {
+			"text": "Notifications",
+			"clear-all-button": true,
+			"button-text": ""
+		},
+		"dnd": {
+			"text": "Do Not Disturb"
+		},
+		"label": {
+			"max-lines": 1,
+			"text": "Notification Center"
+		},
+		"mpris": {
+			"image-size": 96,
+			"image-radius": 12
+		},
+		"volume": {
+			"label": " "
+		},
+        "buttons-grid": {
+            "actions": [
+                {
+                    "label": "",
+                    "type": "toggle",
+                    "update-command": "wifi | grep -q on && echo true || echo false",
+                    "command": "wifi toggle"
+                },
+                {
+                    "label": "",
+                    "type": "toggle",
+                    "update-command": "bluetooth | grep -q on && echo true || echo false",
+                    "command": "bluetooth toggle"
+                },
+                {
+                    "label": " /",
+                    "type": "toggle",
+                    "update-command": "pactl get-sink-mute @DEFAULT_SINK@ | grep -q yes && echo true || echo false",
+                    "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+                },
+                {
+                    "label": "/",
+                    "type": "toggle",
+                    "update-command": "pactl get-source-mute @DEFAULT_SOURCE@ | grep -q yes && echo true || echo false", 
+                    "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+                }
+            ]
+        }
+	}
+}
